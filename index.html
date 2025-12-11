@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Undangan pernikahan Dapot & Elvyana - 10 Januari 2026">
+    
+    <title>Undangan Pernikahan Dapot & Elvyana</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%23C08A82%22>💐</text></svg>">
+</head>
+<body>
+    <!-- Background musik -->
+    <audio id="wedding-music" loop preload="none">
+        <source src="sound/ytmp3free.cc_nothings-gonna-change-my-love-for-you-westlife-lyrics-video-dan-terjemahan-youtubemp3free.org.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+    
+    <!-- Tombol kontrol musik -->
+    <button id="music-toggle" class="music-toggle">
+        <i class="fas fa-volume-up"></i>
+    </button>
+    
+    <!-- Halaman pembuka -->
+    <section id="opening-page" class="page opening-page">
+        <div class="opening-overlay"></div>
+        <div class="opening-content">
+            <div class="opening-text fade-in">
+                <p class="opening-subtitle">Undangan Pernikahan</p>
+                <h1 class="couple-name">Dapot & Elvyana</h1>
+                <p class="wedding-date">10 Januari 2026</p>
+                
+                <!-- Countdown timer -->
+                <div class="countdown-container">
+                    <p class="countdown-title">Pemberkatan Pernikahan</p>
+                    <p class="countdown-date">Sabtu, 10 Januari 2026 pukul 09:00 WIB</p>
+                    <div class="countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <p>Hari</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <p>Jam</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <p>Menit</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <p>Detik</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tombol buka undangan -->
+                <button id="open-invitation" class="btn-open-invitation">
+                    <span>Buka Undangan</span>
+                    <i class="fas fa-heart"></i>
+                </button>
+                
+                <div class="scroll-hint">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Halaman utama -->
+    <main id="main-content" class="hidden">
+        <!-- Salam pembuka -->
+        <section id="greeting" class="page greeting-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Salam Pembuka</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <div class="greeting-content fade-up">
+                    <blockquote class="verse">
+                        "Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan."
+                        <cite>- Kolose 3:14</cite>
+                    </blockquote>
+                    <p class="greeting-text">
+                        Dengan penuh rasa syukur dan sukacita, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dalam pernikahan kami.
+                        Kehadiran dan doa restu Anda merupakan kebahagiaan yang tak ternilai bagi kami.
+                    </p>
+                    <div class="signature">
+                        <p>Dapot & Elvyana</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Profil mempelai -->
+        <section id="couple-profile" class="page profile-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pasangan Mempelai</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Yang dipersatukan dalam ikatan suci pernikahan</p>
+                </div>
+                
+                <div class="couple-profiles">
+                    <!-- Mempelai Pria -->
+                    <div class="profile-card fade-up">
+                        <div class="profile-img-container">
+                            <div class="profile-img groom-img"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Dapot Saut Tiopan Situmorang</h3>
+                            <p class="profile-desc">Mempelai Pria</p>
+                            <div class="profile-parents">
+                                <p>Anak pertama dari</p>
+                                <p><strong>Marusaha Situmorang</strong> dan <strong>Nurmaya Sihombing</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Simbol hati -->
+                    <div class="heart-symbol">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    
+                    <!-- Mempelai Wanita -->
+                    <div class="profile-card fade-up">
+                        <div class="profile-img-container">
+                            <div class="profile-img bride-img"></div>
+                        </div>
+                        <div class="profile-info">
+                            <h3 class="profile-name">Elvyana Elizabeth Sihombing</h3>
+                            <p class="profile-desc">Mempelai Wanita</p>
+                            <div class="profile-parents">
+                                <p>Anak pertama dari</p>
+                                <p><strong>Lamsahari Sihombing</strong> dan <strong>Laura L Hutagalung</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Informasi acara -->
+        <section id="event-info" class="page event-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Informasi Acara</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="events-container">
+                    <!-- Pemberkatan Pernikahan -->
+                    <div class="event-card fade-up">
+                        <div class="event-icon">
+                            <i class="fas fa-church"></i>
+                        </div>
+                        <h3 class="event-title">Pemberkatan Pernikahan</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-calendar"></i>
+                                <div>
+                                    <p class="detail-label">Hari / Tanggal</p>
+                                    <p class="detail-value">Sabtu, 10 Januari 2026</p>
+                                </div>
+                            </div>
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <p class="detail-label">Pukul</p>
+                                    <p class="detail-value">09.00 WIB – selesai</p>
+                                </div>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p class="detail-label">Tempat</p>
+                                    <p class="detail-value">Gereja Kristen Pasundan (GKP), Jln Bratayudha No. 46, Regol, Garut Kota</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com/?q=Gereja+Kristen+Pasundan+Garut" target="_blank" class="btn-map">
+                            <i class="fas fa-map-marked-alt"></i> Buka Peta
+                        </a>
+                    </div>
+                    
+                    <!-- Acara Adat Pernikahan -->
+                    <div class="event-card fade-up">
+                        <div class="event-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h3 class="event-title">Acara Adat Pernikahan</h3>
+                        <div class="event-details">
+                            <div class="event-detail">
+                                <i class="far fa-calendar"></i>
+                                <div>
+                                    <p class="detail-label">Hari / Tanggal</p>
+                                    <p class="detail-value">Sabtu, 10 Januari 2026</p>
+                                </div>
+                            </div>
+                            <div class="event-detail">
+                                <i class="far fa-clock"></i>
+                                <div>
+                                    <p class="detail-label">Pukul</p>
+                                    <p class="detail-value">11.00 WIB – selesai</p>
+                                </div>
+                            </div>
+                            <div class="event-detail">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p class="detail-label">Tempat</p>
+                                    <p class="detail-value">Gedung Serbaguna Banyoe Sinergi Mandala, Jl. Jenderal Sudirman, Sukamentri, Garut Kota</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="https://maps.google.com/?q=Gedung+Serbaguna+Banyoe+Sinergi+Mandala+Garut" target="_blank" class="btn-map">
+                            <i class="fas fa-map-marked-alt"></i> Buka Peta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Nomor rekening -->
+        <section id="bank-account" class="page bank-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Kirim Hadiah</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Jika Anda ingin memberikan kado pernikahan</p>
+                </div>
+                
+                <div class="bank-cards fade-up">
+                    <!-- Rekening Dapot -->
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-male"></i>
+                        </div>
+                        <h3 class="bank-name">Rekening Dapot</h3>
+                        <div class="bank-details">
+                            <div class="bank-detail">
+                                <p class="bank-label">Bank</p>
+                                <p class="bank-value">Bank Central Asia (BCA)</p>
+                            </div>
+                            <div class="bank-detail">
+                                <p class="bank-label">Nomor Rekening</p>
+                                <div class="account-number-container">
+                                    <p class="bank-value account-number" data-account="4461247614">4461247614</p>
+                                    <button class="copy-btn" onclick="copyToClipboard('4461247614')" title="Salin nomor rekening">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bank-detail">
+                                <p class="bank-label">Atas Nama</p>
+                                <p class="bank-value">Dapot Saut Tiopan Situmorang</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rekening Elvyana -->
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="bank-name">Rekening Elvyana</h3>
+                        <div class="bank-details">
+                            <div class="bank-detail">
+                                <p class="bank-label">Bank</p>
+                                <p class="bank-value">Bank Central Asia (BCA)</p>
+                            </div>
+                            <div class="bank-detail">
+                                <p class="bank-label">Nomor Rekening</p>
+                                <div class="account-number-container">
+                                    <p class="bank-value account-number" data-account="1381412844">1381412844</p>
+                                    <button class="copy-btn" onclick="copyToClipboard('1381412844')" title="Salin nomor rekening">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bank-detail">
+                                <p class="bank-label">Atas Nama</p>
+                                <p class="bank-value">Elvyana Lumbantoruan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Alamat pengiriman hadiah -->
+                <div class="bank-cards fade-up">
+                    <div class="bank-card">
+                        <div class="bank-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="bank-name">Alamat Pengiriman Hadiah</h3>
+                        <div class="bank-details">
+                            <div class="bank-detail">
+                                <p class="bank-label">Nama Penerima</p>
+                                <p class="bank-value">Dapot & Elvyana</p>
+                            </div>
+                            <div class="bank-detail">
+                                <p class="bank-label">Alamat Lengkap</p>
+                                <p class="bank-value">
+                                    Jl. Babakan Pajagalan no.19<br>
+                                    Rt/rw 004/007<br>
+                                    Kel. Sukamentri<br>
+                                    Kec. Garut kota<br>
+                                    Kab. Garut
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery foto -->
+        <section id="gallery" class="page gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Gallery Foto</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle"></p>
+                </div>
+                
+                <div class="gallery-container fade-up">
+                    <div class="gallery-item">
+                        <img src="pw/1000132900.jpg" 
+                             alt="Couple photo 1" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pw/1000133556.jpg" 
+                             alt="Couple photo 2" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pw/1000148422.jpg" 
+                             alt="Couple photo 3" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pw 2/1000133234.jpg" 
+                             alt="Couple photo 4" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pw 2/1000133421.jpg" 
+                             alt="Couple photo 5" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="pw 2/1000137408.jpg" 
+                             alt="Couple photo 6" 
+                             loading="lazy"
+                             width="600"
+                             height="400">
+                    </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-image" id="lightbox-image" src="" alt="">
+    <a class="lightbox-prev" id="lightbox-prev">&#10094;</a>
+    <a class="lightbox-next" id="lightbox-next">&#10095;</a>
+</div>
+
+        <!-- RSVP Form -->
+        <section id="rsvp" class="page rsvp-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Mohon konfirmasi kehadiran Anda sebelum 5 Januari 2026</p>
+                </div>
+
+                <form id="rsvp-form" class="rsvp-form fade-up" method="POST" action="https://script.google.com/macros/s/AKfycbyWuCzOjBhLKzYfUc1qIaci3a7om7tdsNEM9Swhb99yr4FjafrL3C58G9FICdzn3MUmfQ/exec">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Konfirmasi Kehadiran</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Mohon konfirmasi kehadiran Anda sebelum 5 Januari 2026</p>
+                </div>
+                
+                <form id="rsvp-form" class="rsvp-form fade-up">
+                    <div class="form-group">
+                        <label for="name">Nama Lengkap *</label>
+                        <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="attendance">Konfirmasi Kehadiran *</label>
+                        <div class="attendance-options">
+                            <label class="attendance-option">
+                                <input type="radio" name="attendance" value="Hadir" required>
+                                <span class="attendance-label">Hadir</span>
+                            </label>
+                            <label class="attendance-option">
+                                <input type="radio" name="attendance" value="Tidak Hadir">
+                                <span class="attendance-label">Tidak Hadir</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="guest-count">Jumlah Tamu *</label>
+                        <select id="guest-count" name="guest-count" required>
+                            <option value="" disabled selected>Pilih jumlah tamu</option>
+                            <option value="1">1 Orang</option>
+                            <option value="2">2 Orang</option>
+                            <option value="3">3 Orang</option>
+                            <option value="4">4 Orang</option>
+                            <option value="5">5 Orang atau lebih</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Pesan (Opsional)</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tuliskan ucapan atau pesan untuk mempelai..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Kirim Konfirmasi
+                    </button>
+                    
+                    <p id="form-message" class="form-message"></p>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <h3 class="footer-title">Terima Kasih</h3>
+                    <p class="footer-text">
+                        Merupakan suatu kehormatan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir.
+                        Atas kehadiran dan doa restu yang diberikan, kami mengucapkan terima kasih.
+                    </p>
+                    <div class="footer-divider"></div>
+                    <p class="footer-quote">"Cinta itu sabar, cinta itu murah hati, ia tidak cemburu, ia tidak memegahkan diri dan tidak sombong." - 1 Korintus 13:4</p>
+                    <p class="footer-copyright">&copy; 2026 Undangan Pernikahan Dapot & Elvyana</p>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Floating navigation -->
+        <nav class="floating-nav">
+            <a href="#greeting" class="nav-item" title="Salam Pembuka">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="#couple-profile" class="nav-item" title="Profil Mempelai">
+                <i class="fas fa-heart"></i>
+            </a>
+            <a href="#event-info" class="nav-item" title="Acara">
+                <i class="fas fa-calendar-alt"></i>
+            </a>
+            <a href="#gallery" class="nav-item" title="Gallery">
+                <i class="fas fa-images"></i>
+            </a>
+            <a href="#rsvp" class="nav-item" title="RSVP">
+                <i class="fas fa-edit"></i>
+            </a>
+        </nav>
+    </main>
+    
+    <!-- Noscript fallback -->
+    <noscript>
+        <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #F4E5CE; z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 20px; text-align: center;">
+            <div>
+                <h2 style="color: #C08A82; margin-bottom: 20px;">JavaScript Diperlukan</h2>
+                <p style="color: #4E5D54; margin-bottom: 20px;">Website undangan ini membutuhkan JavaScript untuk berfungsi dengan baik.</p>
+                <p style="color: #4E5D54;">Silakan hubungi kami langsung melalui WhatsApp untuk konfirmasi kehadiran.</p>
+            </div>
+        </div>
+    </noscript>
+    
+    <script src="script.js"></script>
+</body>
+</html>
